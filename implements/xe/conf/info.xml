@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon version="0.2">
+	<title xml:lang="ko">CleanWWW</title>
+	<description>
+		CleanWWW
+	</description>
+	<version>0.0.1</version>
+	<date>2024-06-02</date>
+	<author email_address="" link="https://github.com/honeymaro/CleanWWW">
+		<name xml:lang="ko">honeymaro</name>
+	</author>
+	<extra_vars>
+		<group>
+			<title xml:lang="ko">OpenAI 설정</title>
+			<var name="api_key" type="text">
+				<title xml:lang="ko">OpenAI API Key</title>
+				<description xml:lang="ko">
+					OpenAI API Key를 입력하세요.
+				</description>
+			</var>
+			<var name="gpt_model" type="select">
+				<title xml:lang="ko">Model</title>
+				<description xml:lang="ko">
+					사용할 모델을 선택하세요.
+				</description>
+				<options value="gpt-4o">
+					<title xml:lang="ko">gpt-4o</title>
+				</options>
+				<options value="gpt-4">
+					<title xml:lang="ko">gpt-4</title>
+				</options>
+				<options value="gpt-3.5-turbo">
+					<title xml:lang="ko">gpt-3.5-turbo</title>
+				</options>
+				<options value="gpt-3.5">
+					<title xml:lang="ko">gpt-3.5</title>
+				</options>
+				<options value="custom">
+					<title xml:lang="ko">직접 입력</title>
+				</options>
+			</var>
+			<var name="gpt_custom_model" type="text">
+				<title xml:lang="ko">Model(직접 입력)</title>
+				<description xml:lang="ko">
+					직접 입력한 모델을 사용할 경우 모델 이름을 입력하세요.
+				</description>
+			</var>
+			<var name="sensitivity" type="text">
+				<title xml:lang="ko">Sensitivity</title>
+				<description xml:lang="ko">
+					0.0 ~ 1.0 사이의 값으로 입력하세요. 1.0에 가까울수록 스팸일 가능성이 높다는 의미입니다.
+					입력한 값 이상의 스팸성을 가진 게시물은 등록되지 않습니다.
+				</description>
+			</var>
+		</group>
+	</extra_vars>
+</addon>
